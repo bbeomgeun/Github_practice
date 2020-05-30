@@ -6,3 +6,5 @@ $git commit -m "#설명"
 되돌리기
 git log -> git checkout 돌아가고싶은 id
 다시 최신으로 가기 -> git checkout -
+---------
+다운받기 git clone 주소
