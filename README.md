@@ -10,6 +10,16 @@
 
 - 해당 저장소에 있는 리모트 저장소 정보 보기 : git remote -v
 
+- 미리 만들어둔 원격 repository를 로컬과 연결하려고 하면 push나 pull이 되지 않는다.<br>
+(failed to push some refs to ... & refusing to merge unrelated histories ...)
+- 원격의 readme.md를 추가하는 커밋 로그가 로컬 저장소의 커밋 로그에 없기 때문에 연결할 수 없다.
+- merge는 원격 저장소와 로컬 저장소가 공통으로 가지고 있는 commit 지점이 존재해야 하므로 pull을 하려고 해도 fetch + merge이기 때문에 되지 않는다.
+
+따라서 1. git clone을 하거나 2. pull 명령어에 옵션을 추가해 강제로 pull한다.
+~~~
+git pull origin (branchname) --allow-unrelated-histories
+~~~
+
 <h3> git clone 해오기 </h3>
 
 1. github에서 repository에서 code를 눌러서 원격저장소 주소를 복사해온다.
