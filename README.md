@@ -71,6 +71,13 @@ git pull origin (branchname) --allow-unrelated-histories
  
 <h4> 팀원과 같은 부분을 작업하면 push나 pull할때 오류가 발생 -> 손수 고쳐주자 </h4>
  
+<h3> 로컬에서 삭제된 파일 복구하기 </h3>
+
+1. git ls-files --deleted // 삭제된 파일 목록
+2. git checkout 복구할 파일이름
+ 
+ 
+ 
 ---
 
 <h2> markdown practice </h2>
